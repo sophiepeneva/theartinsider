@@ -1,0 +1,85 @@
+body {
+    font-family: sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background: hwb(0 78% 14%);
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+main {
+    padding: 20px;
+    margin: 20px auto; /* Adjust margin for better mobile spacing */
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+article {
+    margin-bottom: 30px;
+    overflow: hidden;
+    width: 100%; /* Make articles take full width on mobile */
+    box-sizing: border-box;
+}
+
+.article-preview {
+    display: flex;
+    flex-direction: column; /* Stack image and text vertically */
+    align-items: center; 
+}
+
+img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    margin-bottom: 10px; 
+}
+
+h2 {
+    margin-top: 0;
+    font-size: 1.2em; 
+}
+
+.hidden {
+    display: none;
+}
+
+.read-more {
+    cursor: pointer;
+    color: #333;
+    text-decoration: underline;
+}
+
+/* Media query for responsiveness */
+@media (min-width: 768px) { 
+    main {
+        max-width: 960px; 
+    }
+
+    article {
+        width: 48%; /* Two articles per row on larger screens */
+        margin: 1%;
+        float: left; 
+    }
+
+    .clearfix::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+a {
+    text-decoration: none; /* Remove underline */
+    color: #333; /* Set the default link color */
+    transition: color 0.3s ease; /* Add a smooth transition for color change */
+}
+
+a:hover {
+    color: hsl(0, 1%, 58%); /* Change color on hover for visual feedback */
+}

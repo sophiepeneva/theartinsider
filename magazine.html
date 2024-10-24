@@ -4,83 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Art Scene Insider</title>
-    <style>
-        body {
-            font-family: sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-
-        header {
-            background: #333;
-            color: #fff;
-            text-align: center;
-            padding: 1rem 0;
-        }
-
-        main {
-            padding: 20px;
-            margin: 20px auto; /* Adjust margin for better mobile spacing */
-            background: #fff;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-
-        article {
-            margin-bottom: 30px;
-            overflow: hidden;
-            width: 100%; /* Make articles take full width on mobile */
-            box-sizing: border-box;
-        }
-
-        .article-preview {
-            display: flex;
-            flex-direction: column; /* Stack image and text vertically */
-            align-items: center; 
-        }
-
-        img {
-            width: 100%;
-            height: auto;
-            object-fit: cover;
-            margin-bottom: 10px; 
-        }
-
-        h2 {
-            margin-top: 0;
-            font-size: 1.2em; 
-        }
-
-        .hidden {
-            display: none;
-        }
-
-        .read-more {
-            cursor: pointer;
-            color: #333;
-            text-decoration: underline;
-        }
-
-        /* Media query for responsiveness */
-        @media (min-width: 768px) { 
-            main {
-                max-width: 960px; 
-            }
-
-            article {
-                width: 48%; /* Two articles per row on larger screens */
-                margin: 1%;
-                float: left; 
-            }
-
-            .clearfix::after {
-                content: "";
-                display: table;
-                clear: both;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="style.css"> 
 </head>
 <body>
     <header>
@@ -89,27 +13,41 @@
 
     <main>
         <article>
-            <img src="graffiti.jpeg" alt="Jax and Sera Arguing"> 
-            <h2><a href="fight.html">The Curious Case of the Vanishing Vandal</a></h2> 
-            <p>A series of mysterious art interventions across the city. A shadowy figure, known only as "The Phantom Brush," has been transforming public spaces with their vibrant, thought-provoking murals. ...</p>
-            <div class="full-article hidden">
-                <p>While some hail them as a visionary artist, others decry their actions as vandalism.  Authorities are baffled, with no leads on the Phantom's identity. Is this a rebellious artist making a statement, or a clever publicity stunt?</p>
-            </div>
-            <p class="read-more">Read More</p>
+            <a href="graffiti.html">
+                <img src="graffiti.jpeg" alt="graffiti"> 
+            </a>
+            <h2><a href="graffiti.html">The Curious Case of the Vanishing Vandal</a></h2> 
         </article>
         <article>
-            <img src="fight.jpeg" alt="Jax and Sera Arguing"> 
-            <h2><a href="fight.html">Art World Feud! Wild and Stone's Explosive Split Rocks the Scene</a></h2> 
-            <p>The art world is abuzz with gossip after a public spat between former collaborators Jasper "Jax" Wild and Seraphina "Stone." The two artists, who once seemed inseparable, were spotted having a heated exchange at the opening of the "New Visions" exhibition last night...</p>
-            <div class="full-article hidden">
-                <p>According to eyewitnesses, Stone accused Wild of plagiarizing her ideas and taking credit for her work. "She was shouting at him, calling him a fraud and a thief," says one onlooker. "It was quite a scene."</p>
-                <p>The feud reportedly stems from the artists' recent split after a successful collaborative partnership. Sources say that Stone has been harboring resentment towards Wild for his rising fame and critical acclaim, which she believes is partly due to her own contributions.</p>
-                <p>"Sera feels betrayed and undervalued," says a close friend of Stone's. "She believes Jax has stolen her ideas and used her talent to advance his own career."</p>
-                <p>Wild has yet to comment on the accusations, but the art world is eagerly awaiting his response. This public feud is sure to cast a shadow over both artists' reputations and could potentially damage their careers.</p>
-            </div>
-            <p class="read-more">Read More</p>
+            <a href="cube.html">
+                <img src="cube.jpeg" alt="cube"> 
+            </a>
+            <h2><a href="cube.html">Is Minimalism Dead?  The Art World's Latest Debate</a></h2> 
         </article>
-
+        <article>
+            <a href="gala.html">
+                <img src="gala.jpeg" alt="gala"> 
+            </a>
+            <h2><a href="gala.html">The Reclusive Collector Emerges: Mr. Blackwood's Surprise Appearance at Art Gala</a></h2> 
+        </article>
+        <article>
+            <a href="redherring.html">
+                <img src="redherring.jpeg" alt="redherring"> 
+            </a>
+            <h2><a href="redherring.html">Red Herrings: Not Just for Mystery Novels Anymore!</a></h2> 
+        </article>
+        <article>
+            <a href="fight.html">
+                <img src="fight.jpeg" alt="fight"> 
+            </a>
+            <h2><a href="fight.html">Art World Feud! Wild and Stone's Explosive Split Rocks the Scene</a></h2> 
+        </article>
+        <article>
+            <a href="symbolism.html">
+                <img src="blacktree.jpeg" alt="blacktree"> 
+            </a>
+            <h2><a href="symbolism.html">The Enigma of the Ebony Tree: Unraveling the Symbolism in Anya Volkov's Latest Masterpiece</a></h2> 
+        </article>
         </main>
 
     <script>

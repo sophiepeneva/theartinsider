@@ -4,83 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Art World Feud!</title>
-    <style>
-        body {
-            font-family: sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-
-        header {
-            background: #333;
-            color: #fff;
-            text-align: center;
-            padding: 1rem 0;
-        }
-
-        main {
-            padding: 20px;
-            margin: 20px auto; /* Adjust margin for better mobile spacing */
-            background: #fff;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-
-        article {
-            margin-bottom: 30px;
-            overflow: hidden;
-            width: 100%; /* Make articles take full width on mobile */
-            box-sizing: border-box;
-        }
-
-        .article-preview {
-            display: flex;
-            flex-direction: column; /* Stack image and text vertically */
-            align-items: center; 
-        }
-
-        img {
-            width: 100%;
-            height: auto;
-            object-fit: cover;
-            margin-bottom: 10px; 
-        }
-
-        h2 {
-            margin-top: 0;
-            font-size: 1.2em; 
-        }
-
-        .hidden {
-            display: none;
-        }
-
-        .read-more {
-            cursor: pointer;
-            color: #333;
-            text-decoration: underline;
-        }
-
-        /* Media query for responsiveness */
-        @media (min-width: 768px) { 
-            main {
-                max-width: 960px; 
-            }
-
-            article {
-                width: 48%; /* Two articles per row on larger screens */
-                margin: 1%;
-                float: left; 
-            }
-
-            .clearfix::after {
-                content: "";
-                display: table;
-                clear: both;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="style.css"> 
 </head>
 <body>
     <header>
@@ -91,8 +15,15 @@
         <article>
             <h2>Art World Feud! Wild and Stone's Explosive Split Rocks the Scene</h2>
             <img src="fight.jpeg" alt="Jax and Sera Arguing"> 
-            <p>According to eyewitnesses, Stone accused Wild of plagiarizing her ideas and taking credit for her work. "She was shouting at him, calling him a fraud and a thief," says one onlooker. "It was quite a scene."</p>
-            <p>The feud reportedly stems from the artists' recent split after a successful collaborative partnership. Sources say that Stone has been harboring resentment towards Wild for his rising fame and critical acclaim, which she believes is partly due to her own contributions.</p>
+            <p>The art world is abuzz with gossip after a public spat between former collaborators Jasper "Jax" Wild and Seraphina "Stone." The two artists, who once seemed inseparable, were spotted having a heated exchange at the opening of the "New Visions" exhibition last night...
+
+                According to eyewitnesses, Stone accused Wild of plagiarizing her ideas and taking credit for her work. "She was shouting at him, calling him a fraud and a thief," says one onlooker. "It was quite a scene."
+                
+                The feud reportedly stems from the artists' recent split after a successful collaborative partnership. Sources say that Stone has been harboring resentment towards Wild for his rising fame and critical acclaim, which she believes is partly due to her own contributions.
+                
+                "Sera feels betrayed and undervalued," says a close friend of Stone's. "She believes Jax has stolen her ideas and used her talent to advance his own career."
+                
+                Wild has yet to comment on the accusations, but the art world is eagerly awaiting his response. This public feud is sure to cast a shadow over both artists' reputations and could potentially damage their careers.</p>
             </main>
 </body>
 </html>
